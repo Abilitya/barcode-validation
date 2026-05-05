@@ -6,7 +6,8 @@ export type Symbology =
   | "isbn"
   | "issn"
   | "upc_a"
-  | "upc_e";
+  | "upc_e"
+  | "code_128";
 
 declare module "barcode-validation" {
   export function isValid(symbology: Symbology, value: string): boolean;
